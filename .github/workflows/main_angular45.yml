@@ -26,7 +26,6 @@ jobs:
         npm install
         node server
         
-
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
       with:
