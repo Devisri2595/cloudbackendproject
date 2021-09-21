@@ -25,6 +25,7 @@ jobs:
       run: |
         npm install
         npm run start:server
+        npm run build --prod
         
 
     - name: Upload artifact for deployment job
@@ -51,6 +52,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'cloudbackend1'
-        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_362c842042de423eb9c5daaea505851a }}
         package: .
