@@ -51,4 +51,4 @@ jobs:
         app-name: 'angular45'
         
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_6364ac7205c342c5bdacdb93889d561d }}
-        package: ./dist/server
+        package: .
