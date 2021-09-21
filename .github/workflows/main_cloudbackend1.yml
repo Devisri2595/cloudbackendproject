@@ -51,4 +51,4 @@ jobs:
       with:
         app-name: 'cloudbackend1'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_cfedf03857d542adb7dab9ebc434d83a }}
-        package: ./dist/cloudbackend1
+        package: ./dist/server
